@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown con Lupa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container py-4 px-4 ">
+        <div class="row">
+            <a href="#" class="text-decoration-none text-blur offset-md-3">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Volver
+            </a>
+            <h2 class="text-center mt-3 fw-bold">Formulario Inspeccion</h2>
+            <div class="col-md-6 offset-md-3 mt-4">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <!-- <i class="fas fa-search"></i>-->  Tipo de Tanque
+                    </button>
+                    <ul class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#" onclick="changeButtonText('Enterrado')">Enterrado (Tipo 1)</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeButtonText('Subterraneo')">Subterraneo (Tipo 2)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-3">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="icon-text">
+                            <i class="fas fa-search"></i>
+                            Empresa
+                        </div>
+                    </button>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-header">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" id="searchInput">
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Norgas</a>
+                        <a class="dropdown-item" href="#">Colgas</a>
+                        <a class="dropdown-item" href="#">Ecopetrol</a>
+                        <a class="dropdown-item" href="#">GasCali</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- DATOS DEL CLIENTE -->
+        <div class="row">
+            <h2 class="text-center mt-4 fw-bold">Datos del Cliente</h2>
+            
+            
+            <div class="col-md-6 offset-md-3 mt-2">
+                <input type="text" class="form-control  mb-3" placeholder="Nombre">
+                <input type="text" class="form-control  mb-3" placeholder="Apellido">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="icon-text">
+                            <i class="fas fa-search"></i>
+                            Departamento
+                        </div>
+                    </button>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-header">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" id="searchInput">
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cauca</a>
+                        <a class="dropdown-item" href="#">Cundinamarca</a>
+                        <a class="dropdown-item" href="#">Guaviare</a>
+                        <a class="dropdown-item" href="#">Tolima</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-2">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="icon-text">
+                            <i class="fas fa-search"></i>
+                            Ciudad
+                        </div>
+                    </button>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-header">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" id="searchInput">
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cali</a>
+                        <a class="dropdown-item" href="#">Medellin</a>
+                        <a class="dropdown-item" href="#">Bogota</a>
+                        <a class="dropdown-item" href="#">Pasto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-2">
+                <input type="text" class="form-control  mb-3" placeholder="Direccion">
+                
+            </div>
+        </div>
+
+
+
+
+        <!-- DATOS DEL TANQUE -->
+        <div class="row">
+            <h2 class="text-center mt-4 fw-bold">Datos del Tanque</h2>
+            
+            
+            <div class="col-md-6 offset-md-3 mt-2">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="icon-text">
+                            <i class="fas fa-search"></i>
+                            Fabricante
+                        </div>
+                    </button>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-header">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" id="searchInput">
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Rego</a>
+                        <a class="dropdown-item" href="#">Sherwood</a>
+
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-md-6 offset-md-3 mt-2">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="icon-text">
+                            <i class="fas fa-search"></i>
+                            Numero de Serie
+                        </div>
+                    </button>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-header">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" id="searchInput">
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">6555R112</a>
+                        <a class="dropdown-item" href="#">6555R10</a>
+                        <a class="dropdown-item" href="#">6555R13</a>
+                        <a class="dropdown-item" href="#">6555R10T</a>
+                        <a class="dropdown-item" href="#">5755R10R</a>
+                        <a class="dropdown-item" href="#">2355R10</a>
+
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        
+    </div>
+
+    <script>
+        // const searchInput = document.getElementById('searchInput');
+        // const dropdownItems = document.querySelectorAll('.dropdown-item');
+        
+        // searchInput.addEventListener('input', function() {
+        //     const searchTerm = searchInput.value.toLowerCase();
+            
+        //     dropdownItems.forEach(function(item) {
+        //         const text = item.innerText.toLowerCase();
+                
+        //         if (text.includes(searchTerm)) {
+        //             item.style.display = 'block';
+        //         } else {
+        //             item.style.display = 'none';
+        //         }
+        //     });
+        // });
+        function changeButtonText(option) {
+            let dropdownButton = document.getElementById('dropdownMenuButton');
+            dropdownButton.innerHTML =  option;
+        }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+
+.fondo{
+    background-image: url('./assets/Body-bg.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* LOGIN */
+.btn-login{
+    background-color: #095593;
+}
