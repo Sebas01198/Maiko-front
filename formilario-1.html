@@ -6,18 +6,19 @@
     <title>Dropdown con Lupa</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container py-4 px-4 ">
         <div class="row">
-            <a href="#" class="text-decoration-none text-blur offset-md-3">
+            <a href="Inspecciones.html" class="text-decoration-none text-blur offset-md-3">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
                 Volver
             </a>
             <h2 class="text-center mt-3 fw-bold">Formulario Inspeccion</h2>
             <div class="col-md-6 offset-md-3 mt-4">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          <!-- <i class="fas fa-search"></i>-->  Tipo de Tanque
                     </button>
                     <ul class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton">
@@ -27,11 +28,18 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-4">
+                <label for="fecha">Fecha</label>
+                <input id="fecha" type="Date" class="form-control  mb-3">
+            </div>
+
+        </div>
 
         <div class="row">
             <div class="col-md-6 offset-md-3 mt-3">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="icon-text">
                             <i class="fas fa-search"></i>
                             Empresa
@@ -62,7 +70,7 @@
                 <input type="text" class="form-control  mb-3" placeholder="Apellido">
 
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="icon-text">
                             <i class="fas fa-search"></i>
                             Departamento
@@ -86,7 +94,7 @@
             <div class="col-md-6 offset-md-3 mt-2">
 
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="icon-text">
                             <i class="fas fa-search"></i>
                             Ciudad
@@ -124,7 +132,7 @@
             <div class="col-md-6 offset-md-3 mt-2">
 
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="icon-text">
                             <i class="fas fa-search"></i>
                             Fabricante
@@ -150,7 +158,7 @@
             <div class="col-md-6 offset-md-3 mt-2">
 
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="icon-text">
                             <i class="fas fa-search"></i>
                             Numero de Serie
@@ -171,10 +179,21 @@
                     </div>
                 </div>
             </div>
-
-            
+                       
         </div>
-        
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-4">
+                <!-- <label for="fecha-fabricacion">Año de fabricacion</label> -->
+                <input type="date" class="form-control mb-3" id="fecha-fabricacion" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Fecha de Fabricacion">
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="text-center mt-3">
+                <button class="btn btn-login text-light fw-bold px-5 m-5">Siguiente</button>
+            </div>
+        </div>
     </div>
 
     <script>

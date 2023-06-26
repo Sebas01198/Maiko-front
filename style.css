@@ -6,6 +6,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+a{
+    text-decoration: none;
+}
 
 
 /* LOGIN */
